@@ -1,1 +1,33 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 50;
+  font-size: 24px;
+  
+}
+
+.nav-link{
+  color: $white;
+}
+
  
+.bar{
+  .bar-green{
+    width: 50%;
+    border-bottom: 3px solid $maingreen;
+  }
+  .bar-blue{
+    width: 50%;
+    border-bottom: 3px solid $mainblue;
+  }
+}
+
+.headerimg{
+  background: url('bg_home_mobile.jpg');
+  width: 100%;
+  height: 100%;
+}
+
