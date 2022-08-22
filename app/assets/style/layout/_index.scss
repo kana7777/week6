@@ -1,3 +1,10 @@
+$maindark:#202020;
+$secondarydark:#2D2D2D;
+
+
+ul,li{
+  list-style:none;
+}
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -17,17 +24,85 @@
 .bar{
   .bar-green{
     width: 50%;
-    border-bottom: 3px solid $maingreen;
+    border-bottom: 3px solid $primary;
   }
   .bar-blue{
     width: 50%;
-    border-bottom: 3px solid $mainblue;
+    border-bottom: 3px solid $secondary;
   }
 }
 
 .headerimg{
-  background: url('bg_home_mobile.jpg');
-  width: 100%;
-  height: 100%;
+  background: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home.jpg');
+  background-size: cover;
+  height:680px ;
+  max-width: 100%;
+  position: relative;
 }
 
+header{
+  .box{
+    background-color: $maindark;
+    position: absolute;
+    top:10rem;
+  }
+  .gradienttitle{
+    background-image: linear-gradient(180deg, $primary, $secondary);
+    background-clip: text;
+    color: transparent;
+  }
+  .boxdot{  
+    width: 10px;
+    height: 10px;
+  }
+ 
+}
+ 
+.introbanner{
+  max-width: 100%;
+  background-color: $secondarydark;
+ 
+  .card{
+ 
+    background-color: $secondarydark;
+    border: none;
+    min-height: 100%;
+    padding: $spacer*2;
+    border: $secondarydark  1px solid;
+    opacity: 0.5;
+
+  }
+  .card:hover{
+    background-color: $maindark;
+    border: $primary 1px solid;
+    opacity: 1;
+
+  }
+  .icon{
+    color: $white;
+  }
+  .icon:hover{
+    background-image: linear-gradient(180deg, $primary, $secondary);
+    background-clip: text;
+    color: transparent;
+  }
+ 
+  .borderbottom{
+    border-bottom: $primary 3px solid;
+    width: 25%;
+  }
+
+}
+
+
+//sec2
+.classprocess{
+  h2::after{
+    padding: 8px;
+    content: '  ';
+    border-bottom: $primary 3px solid;
+    width: 3rem;
+    margin: 0 auto;
+  }
+ 
+}
