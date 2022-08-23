@@ -1,6 +1,7 @@
 $maindark:#202020;
 $secondarydark:#2D2D2D;
 $mainbg:#1C1C1C;
+$layoutbg:#1A1A1A;
 
 
 ul,li{
@@ -34,7 +35,7 @@ ul,li{
 }
 
 .headerimg{
-  background: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home.jpg');
+  background: url('../images/bg_home.jpg');
   background-size: cover;
   height:680px ;
   max-width: 100%;
@@ -170,29 +171,35 @@ header{
 
   .cards{
     width: 25%;
+    
+    @include mobile{
+      width:100%;
+    }
+    
+
 
       .info01{
         height: 615px;
-        background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('./assets/images/info01.jpg');
+        background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('../images/info01.jpg');
         filter: grayscale(100%);
       }
       .info02{
         background-position: center ;
         height: 615px;
-        background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info02.jpg');
+        background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('../images/info02.jpg');
         filter: grayscale(100%);
       }
       
       .info03{
         background-position: center ;
         height: 615px;
-        background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info03.jpg');
+        background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('../images/info03.jpg');
         filter: grayscale(100%);
       }
       .info04{
         background-position: center ;
         height: 615px;
-        background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info04.jpg');
+        background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('../images/info04.jpg');
         filter: grayscale(100%);
       }
       .cardtext{
@@ -315,12 +322,82 @@ header{
 
 .articalshare{
   background-color: $maindark;
-  .cardS{
+  .cards{
+   
+
     background-color: $maindark;
+    a{
+     
+      display: block;
+      text-align: right;
+      text-decoration: none;
+      font-family:'Azeret Mono', monospace;
+
+    }
+    .card-title{
+      font-size: 20px;
+    }
+    .card-body{
+      min-height: 200px;
+    }
+
   }
-  .cards:hover{
-    border: $primary 1px solid;
+ 
+  .bordersquare{
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+  }
+    .cards:hover{
+      .bordersquare{
+      opacity: 1;
+      }
+      .square1{
+        border-top-left-radius:18px;
+      }
+      .square2{
+        border-top-right-radius:18px;
+      }
+      .square3{
+        border-bottom-left-radius:18px;
+      }
+      .square4{
+        border-bottom-right-radius:18px;
+      }
+        }
+     
+}
+
+
+//學生分享
+
+.bg_share{
+  background: url('../images/bg_share.jpg');
+  background-size: cover;
+  background-position: center;
+  height:733px ;
+  max-width: 100%;
+  .sliderblock{
+    margin-left:5rem;
+    width: 45%;
+    box-shadow: -10px 10px 0px 0.5px $black,
+    -9px 9px 0px 2px $gray;
+
+    border-radius: 22px;
+ 
+  }
+  .carousel .carousel-item {
+    height: 380px;
+
+    
+  }
+  .carousel-inner{
     border-radius: 24px;
   }
  
+ 
+  .carousel-indicators{
+    color: $primary;
+  }
+   
 }
