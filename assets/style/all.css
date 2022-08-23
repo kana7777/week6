@@ -12103,9 +12103,9 @@ header h1, header .h1 {
 
 .infomation .cards .info01 {
   height: 615px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 60, 60, 0.5)), to(rgba(60, 60, 60, 0.3))), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info01.jpg");
-  background-image: -o-linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info01.jpg");
-  background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info01.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 60, 60, 0.5)), to(rgba(60, 60, 60, 0.3))), url("./assets/images/info01.jpg");
+  background-image: -o-linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("./assets/images/info01.jpg");
+  background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("./assets/images/info01.jpg");
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
