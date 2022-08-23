@@ -11962,7 +11962,7 @@ ul, li {
 }
 
 .headerimg {
-  background: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home.jpg");
+  background: url("../images/bg_home.jpg");
   background-size: cover;
   height: 680px;
   max-width: 100%;
@@ -12101,11 +12101,17 @@ header h1, header .h1 {
   width: 25%;
 }
 
+@media (max-width: 768px) {
+  .infomation .cards {
+    width: 100%;
+  }
+}
+
 .infomation .cards .info01 {
   height: 615px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 60, 60, 0.5)), to(rgba(60, 60, 60, 0.3))), url("./assets/images/info01.jpg");
-  background-image: -o-linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("./assets/images/info01.jpg");
-  background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("./assets/images/info01.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 60, 60, 0.5)), to(rgba(60, 60, 60, 0.3))), url("../images/info01.jpg");
+  background-image: -o-linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("../images/info01.jpg");
+  background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("../images/info01.jpg");
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
@@ -12113,9 +12119,9 @@ header h1, header .h1 {
 .infomation .cards .info02 {
   background-position: center;
   height: 615px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 60, 60, 0.5)), to(rgba(60, 60, 60, 0.3))), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info02.jpg");
-  background-image: -o-linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info02.jpg");
-  background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info02.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 60, 60, 0.5)), to(rgba(60, 60, 60, 0.3))), url("../images/info02.jpg");
+  background-image: -o-linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("../images/info02.jpg");
+  background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("../images/info02.jpg");
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
@@ -12123,9 +12129,9 @@ header h1, header .h1 {
 .infomation .cards .info03 {
   background-position: center;
   height: 615px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 60, 60, 0.5)), to(rgba(60, 60, 60, 0.3))), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info03.jpg");
-  background-image: -o-linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info03.jpg");
-  background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info03.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 60, 60, 0.5)), to(rgba(60, 60, 60, 0.3))), url("../images/info03.jpg");
+  background-image: -o-linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("../images/info03.jpg");
+  background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("../images/info03.jpg");
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
@@ -12133,9 +12139,9 @@ header h1, header .h1 {
 .infomation .cards .info04 {
   background-position: center;
   height: 615px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 60, 60, 0.5)), to(rgba(60, 60, 60, 0.3))), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info04.jpg");
-  background-image: -o-linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info04.jpg");
-  background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info04.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 60, 60, 0.5)), to(rgba(60, 60, 60, 0.3))), url("../images/info04.jpg");
+  background-image: -o-linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("../images/info04.jpg");
+  background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("../images/info04.jpg");
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
@@ -12297,13 +12303,77 @@ header h1, header .h1 {
   background-color: #202020;
 }
 
-.articalshare .cardS {
+.articalshare .cards {
   background-color: #202020;
 }
 
-.articalshare .cards:hover {
-  border: #62DB54 1px solid;
+.articalshare .cards a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-family: 'Azeret Mono', monospace;
+}
+
+.articalshare .cards .card-title {
+  font-size: 20px;
+}
+
+.articalshare .cards .card-body {
+  min-height: 200px;
+}
+
+.articalshare .bordersquare {
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.articalshare .cards:hover .bordersquare {
+  opacity: 1;
+}
+
+.articalshare .cards:hover .square1 {
+  border-top-left-radius: 18px;
+}
+
+.articalshare .cards:hover .square2 {
+  border-top-right-radius: 18px;
+}
+
+.articalshare .cards:hover .square3 {
+  border-bottom-left-radius: 18px;
+}
+
+.articalshare .cards:hover .square4 {
+  border-bottom-right-radius: 18px;
+}
+
+.bg_share {
+  background: url("../images/bg_share.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 733px;
+  max-width: 100%;
+}
+
+.bg_share .sliderblock {
+  margin-left: 5rem;
+  width: 45%;
+  -webkit-box-shadow: -10px 10px 0px 0.5px #000, -9px 9px 0px 2px #C1C1C1;
+          box-shadow: -10px 10px 0px 0.5px #000, -9px 9px 0px 2px #C1C1C1;
+  border-radius: 22px;
+}
+
+.bg_share .carousel .carousel-item {
+  height: 380px;
+}
+
+.bg_share .carousel-inner {
   border-radius: 24px;
+}
+
+.bg_share .carousel-indicators {
+  color: #62DB54;
 }
 
 /*# sourceMappingURL=all.css.map */

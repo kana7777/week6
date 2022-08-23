@@ -314,22 +314,112 @@
     </div>
 </section>
 
-<section class="articalshare pt-6 mt-0">
+<section class="articalshare py-6 mt-0 ">
     <div class="container">
-        <h2 class="text-light text-center fs-5 fw-bold title mb-6">文章分享</h2>
-        <div class="row">
+        <h2 class="text-light text-center fs-5 fw-bold title mb-6 ">文章分享</h2>
+        <div class="row my-6">
             <div class="col-md-4">
-                <div class="cards">
-                    <img src="./assets/images/article01.jpg" class="card-img-top p-3" alt="car">
-                    <div class="card-body">
-                        <h5 class="card-title text-light fs-7">Card title</h5>
-                        <p class="card-text text-light fs-8">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                         
-                    </div>
-
+                <div class="cards position-relative">
+                    <div class="border-primary bordersquare position-absolute top-0 start-0 border-top border-start square1 "></div>
+                    <div class="border-primary bordersquare position-absolute top-0 end-0 border-top border-end square2"></div>
+                    <div class="border-primary bordersquare position-absolute bottom-0 start-0 border-bottom border-start square3"></div>
+                    <div class="border-primary bordersquare position-absolute bottom-0 end-0 border-bottom border-end square4"></div>
+                    <img src="./assets/images/article01.jpg" class="card-img-top p-5" alt="car">
+                    <div class="card-body px-5 pb-3 d-md-flex flex-column justify-content-between">
+                        <h5 class="card-title text-light fw-bold">2022 前端開發者學習地圖</h5>
+                        <p class="card-text text-light fs-8 mb-1">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
+                        <span><a href="#" class="link-primary text-end text-uppercase">more</a> 
+                        </span>
+                   </div>
                 </div>
             </div>
+            <!-- 第二張卡片 -->
+            <div class="col-md-4">
+                <div class="cards position-relative">
+                    <div class="border-primary bordersquare position-absolute top-0 start-0 border-top border-start square1 "></div>
+                    <div class="border-primary bordersquare position-absolute top-0 end-0 border-top border-end square2"></div>
+                    <div class="border-primary bordersquare position-absolute bottom-0 start-0 border-bottom border-start square3"></div>
+                    <div class="border-primary bordersquare position-absolute bottom-0 end-0 border-bottom border-end square4"></div>
+                    <img src="./assets/images/article02.jpg" class="card-img-top p-5" alt="car">
+                    <div class="card-body px-5 pb-3 d-md-flex flex-column  justify-content-between">
+                        <h5 class="card-title text-light fw-bold ">軟體工程師有哪些類別</h5>
+                        <p class="card-text text-light fs-8 mb-1">軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
+                        <span><a href="#" class="link-primary text-end text-uppercase">more</a> 
+                        </span>
+                   </div>
+                </div>
+            </div>
+            <!-- 第三張卡片 -->
+            <div class="col-md-4">
+                <div class="cards position-relative">
+                    <div class="border-primary bordersquare position-absolute top-0 start-0 border-top border-start square1 "></div>
+                    <div class="border-primary bordersquare position-absolute top-0 end-0 border-top border-end square2"></div>
+                    <div class="border-primary bordersquare position-absolute bottom-0 start-0 border-bottom border-start square3"></div>
+                    <div class="border-primary bordersquare position-absolute bottom-0 end-0 border-bottom border-end square4"></div>
+                    <img src="./assets/images/article03.jpg" class="card-img-top p-5" alt="car">
+                    <div class="card-body px-5 pb-3 d-md-flex flex-column justify-content-between">
+                        <h5 class="card-title text-light fw-bold">2022 前端開發者學習地圖</h5>
+                        <p class="card-text text-light fs-8 mb-1">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
+                        <span><a href="#" class="link-primary text-end text-uppercase">more</a> 
+                        </span>
+                   </div>
+                </div>
+            </div>
+
         </div>
+</section>
+
+
+<section class="studentshare">
+    <div class="bg_share">
+        <div class="container">
+        <h2 class="fw-bold fs-4 text-light text-center title pt-6">
+            專屬你的學習課程 <br>超過 3000 位學員得到了程式超能力
+        </h2>
+            <div class="sliderblock mt-6 position-relative">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner  ">
+                      <div class="carousel-item active">
+                        <img src="./assets/images/share.jpg" class="d-block" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/share02.jpg" class="d-block cover" alt="..." width="110%">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/share03.jpg" class="d-block " alt="..." width="130%">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                      <span class="visually-hidden ">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="studentcard">
+                
+            </div>
+
+
+        </div>
+
+
+
+    </div>  
+</section>
+
+
+<section class="jointeacher">
+    
+
 </section>
 
     <footer class="footer">
