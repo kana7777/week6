@@ -11938,6 +11938,10 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  background-color: #000;
+}
+
 ul, li {
   list-style: none;
 }
@@ -11991,6 +11995,12 @@ header .boxdot {
 
 header h1, header .h1 {
   font-size: 48px;
+}
+
+footer {
+  background-color: #1A1A1A;
+  color: #909090;
+  font-family: 'Azeret Mono', monospace;
 }
 
 .introbanner {
@@ -12374,6 +12384,46 @@ header h1, header .h1 {
 
 .bg_share .carousel-indicators {
   color: #62DB54;
+}
+
+.bg_share .cards2 {
+  height: 40%;
+  background-color: #fff;
+  width: 20rem;
+  right: -350px;
+  bottom: -50px;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.bg_share .cards2 img {
+  height: 100px;
+  right: 2px;
+}
+
+.bg_share .cards2 h5, .bg_share .cards2 .h5 {
+  font-size: 18px;
+}
+
+.jointeacher {
+  background-color: #000;
+}
+
+.jointeacher .cards {
+  margin: 0 auto;
+  background-color: #202020;
+  width: 80%;
+  border-radius: 24px;
+}
+
+.jointeacher span {
+  opacity: 0.5;
+  font-size: 120px;
+}
+
+.jointeacher .btn {
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=all.css.map */
