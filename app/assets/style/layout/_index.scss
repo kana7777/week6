@@ -2,7 +2,11 @@ $maindark:#202020;
 $secondarydark:#2D2D2D;
 $mainbg:#1C1C1C;
 $layoutbg:#1A1A1A;
+$footertext:#909090;
 
+body{
+  background-color: $black;
+}
 
 ul,li{
   list-style:none;
@@ -63,6 +67,12 @@ header{
  
 }
  
+footer{
+  background-color: $layoutbg;
+  color: $footertext;
+  font-family: 'Azeret Mono', monospace;
+
+}
 .introbanner{
   max-width: 100%;
   background-color: $secondarydark;
@@ -399,5 +409,43 @@ header{
   .carousel-indicators{
     color: $primary;
   }
+  .cards2{
+    height: 40%;
+    background-color: $white;
+    width: 20rem;
+    right:-350px;
+    bottom:-50px;
+    border-top-right-radius:24px;
+    border-top-left-radius:24px;
+    border-bottom-right-radius:24px;
+    img{
+      height: 100px;
+      right: 2px;
+    }
+    h5{
+      font-size: 18px;
+    }
+  }
    
+}
+
+.jointeacher{
+  background-color: $black;
+
+  .cards{
+    margin: 0 auto;
+    background-color: $maindark;
+    width: 80%;
+    border-radius: 24px;
+
+  }
+  
+  span{
+    opacity: 0.5;
+    font-size: 120px;
+  }
+  .btn{
+    border-radius: 10px;
+  }
+
 }
