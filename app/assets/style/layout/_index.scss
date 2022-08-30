@@ -5,7 +5,7 @@ $layoutbg:#1A1A1A;
 $footertext:#909090;
 
 body{
-  background-color: $black;
+  background-color:#000;
 }
 
 ul,li{
@@ -21,7 +21,9 @@ ul,li{
   font-size: 24px;
   
 }
-
+nav{
+  background-color: $secondarydark;
+}
 .nav-link{
   color: $white;
 }
@@ -430,8 +432,7 @@ footer{
 }
 
 .jointeacher{
-  background-color: $black;
-
+ background-color: #000;
   .cards{
     margin: 0 auto;
     background-color: $maindark;

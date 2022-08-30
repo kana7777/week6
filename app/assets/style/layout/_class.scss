@@ -1,6 +1,43 @@
 
 
-main{
+body{
     background-color: $mainbg;
 
+}
+
+.classbtnlist{
+    .active{
+        color:  $primary;
+        border-color: $primary;
+        background-color: $mainbg;
+    }
+}
+
+.classitem{
+    background-color: $secondarydark;
+    border-radius: 24px;
+    img{
+        height: 100px;
+    }
+    .btn{
+        border-radius: 8px;
+        font-size: 16px;
+ 
+ 
+    }
+    .showclassbtn{
+        background-image: linear-gradient(104deg, #62DB54, #09ACF5);
+        border-radius: 8px;
+        color:#fff;
+    }
+    .showclassbtn:hover{
+        background-image: linear-gradient(180deg, #62DB54,#09ACF5);
+        border-radius: 8px;
+        color:#fff;
+        transform: translateX(1px);
+        transition: 0.2s;
+    }
+    h5{
+        font-family: 'Azeret Mono', monospace;
+    }
 }
