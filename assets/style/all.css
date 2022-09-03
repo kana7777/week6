@@ -11977,10 +11977,25 @@ nav {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .headerimg {
+    background: url("../images/bg_home_mobile.jpg");
+    background-size: cover;
+    height: 336px;
+  }
+}
+
 header .box {
   background-color: #202020;
   position: absolute;
   top: 10rem;
+}
+
+@media (max-width: 768px) {
+  header .box {
+    top: 1.5rem;
+    padding-left: 12px;
+  }
 }
 
 header .gradienttitle {
@@ -11998,7 +12013,13 @@ header .boxdot {
 }
 
 header h1, header .h1 {
-  font-size: 48px;
+  font-size: 46px;
+}
+
+@media (max-width: 768px) {
+  header h1, header .h1 {
+    font-size: 32px;
+  }
 }
 
 footer {
@@ -12010,6 +12031,12 @@ footer {
 .introbanner {
   max-width: 100%;
   background-color: #2D2D2D;
+}
+
+@media (max-width: 768px) {
+  .introbanner .introbanner_title {
+    text-align: center;
+  }
 }
 
 .introbanner .card {
@@ -12043,6 +12070,12 @@ footer {
 .introbanner .borderbottom {
   border-bottom: #62DB54 3px solid;
   width: 25%;
+}
+
+@media (max-width: 768px) {
+  .introbanner .borderbottom {
+    display: none;
+  }
 }
 
 .title::after {
@@ -12130,6 +12163,12 @@ footer {
           filter: grayscale(100%);
 }
 
+@media (max-width: 768px) {
+  .infomation .cards .info01 {
+    height: 360px;
+  }
+}
+
 .infomation .cards .info02 {
   background-position: center;
   height: 615px;
@@ -12138,6 +12177,12 @@ footer {
   background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.3)), url("../images/info02.jpg");
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+@media (max-width: 768px) {
+  .infomation .cards .info02 {
+    height: 360px;
+  }
 }
 
 .infomation .cards .info03 {
@@ -12150,6 +12195,12 @@ footer {
           filter: grayscale(100%);
 }
 
+@media (max-width: 768px) {
+  .infomation .cards .info03 {
+    height: 360px;
+  }
+}
+
 .infomation .cards .info04 {
   background-position: center;
   height: 615px;
@@ -12160,9 +12211,22 @@ footer {
           filter: grayscale(100%);
 }
 
+@media (max-width: 768px) {
+  .infomation .cards .info04 {
+    height: 360px;
+  }
+}
+
 .infomation .cards .cardtext {
   top: 10rem;
   left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .infomation .cards .cardtext {
+    top: 30%;
+    left: 20%;
+  }
 }
 
 .infomation .cards .infoicon {
@@ -12342,6 +12406,12 @@ footer {
   height: 50px;
 }
 
+@media (max-width: 768px) {
+  .articalshare .cards:hover .bordersquare {
+    display: none;
+  }
+}
+
 .articalshare .cards:hover .bordersquare {
   opacity: 1;
 }
@@ -12421,9 +12491,30 @@ footer {
   border-radius: 24px;
 }
 
-.jointeacher span {
-  opacity: 0.5;
-  font-size: 120px;
+.jointeacher .cards span {
+  font-size: 100px;
+  opacity: 0.7;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .jointeacher .cards span {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .jointeacher .cards h1, .jointeacher .cards .h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .jointeacher .cards p {
+    text-align: center;
+  }
 }
 
 .jointeacher .btn {
