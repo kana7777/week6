@@ -3,6 +3,7 @@ $secondarydark:#2D2D2D;
 $mainbg:#1C1C1C;
 $layoutbg:#1A1A1A;
 $footertext:#909090;
+@import'mixin.scss';
 
 body{
   background-color:#000;
@@ -46,6 +47,11 @@ nav{
   height:680px ;
   max-width: 100%;
   position: relative;
+  @include mobile {
+    background: url('../images/bg_home_mobile.jpg');
+    background-size: cover;
+    height: 336px;
+  }
 }
 
 header{
@@ -53,6 +59,13 @@ header{
     background-color: $maindark;
     position: absolute;
     top:10rem;
+    @include mobile {
+      top:1.5rem;
+      padding-left: 12px;
+
+
+ 
+    }
   }
   .gradienttitle{
     background-image: linear-gradient(180deg, $primary, $secondary);
@@ -64,7 +77,10 @@ header{
     height: 10px;
   }
   h1{
-    font-size: 48px;
+    font-size: 46px;
+    @include mobile {
+      font-size: 32px;
+    }
   }
  
 }
@@ -78,14 +94,22 @@ footer{
 .introbanner{
   max-width: 100%;
   background-color: $secondarydark;
+  .introbanner_title{
  
+    @include mobile{
+      text-align: center;
+
+    }
+  }
   .card{
     background-color: $secondarydark;
     border: none;
     min-height: 100%;
     padding: $spacer*2;
+
     border: $secondarydark  1px solid;
     opacity: 0.5;
+
 
   }
   .card:hover{
@@ -105,6 +129,9 @@ footer{
   .borderbottom{
     border-bottom: $primary 3px solid;
     width: 25%;
+    @include mobile{
+      display: none;
+    }
   }
 
 }
@@ -116,6 +143,7 @@ footer{
   width:3rem;
   display: block;
   padding-top: 1rem;
+
 }
 //sec2
 .classprocess{
@@ -183,23 +211,27 @@ footer{
 
   .cards{
     width: 25%;
-    
+
     @include mobile{
       width:100%;
+
     }
-    
-
-
       .info01{
         height: 615px;
         background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('../images/info01.jpg');
         filter: grayscale(100%);
+        @include mobile{
+          height: 360px;
+        }
       }
       .info02{
         background-position: center ;
         height: 615px;
         background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('../images/info02.jpg');
         filter: grayscale(100%);
+        @include mobile{
+          height: 360px;
+        }
       }
       
       .info03{
@@ -207,16 +239,27 @@ footer{
         height: 615px;
         background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('../images/info03.jpg');
         filter: grayscale(100%);
+        @include mobile{
+          height: 360px;
+        }
       }
       .info04{
         background-position: center ;
         height: 615px;
         background-image:linear-gradient(rgba(60,60,60,0.5), rgba(60,60,60,0.3)),url('../images/info04.jpg');
         filter: grayscale(100%);
+        @include mobile{
+          height: 360px;
+        }
       }
       .cardtext{
         top:10rem;
         left:2rem;
+        @include mobile{
+          top:30%;
+          left: 20%;
+        }
+
       }
       .infoicon{
         color: $white;
@@ -229,11 +272,13 @@ footer{
         content: '';
         border-bottom: $white 3px solid;
         transition: 0.2s;
+  
       }
       h5{
         color:$gray;
       }
       // HOVER區
+
       .info01:hover{  
           filter: none;
           transition: 0.2s;
@@ -360,7 +405,13 @@ footer{
     width: 50px;
     height: 50px;
   }
+  
     .cards:hover{
+      @include mobile{
+        .bordersquare{
+          display: none;
+          }
+      }
       .bordersquare{
       opacity: 1;
       }
@@ -394,7 +445,6 @@ footer{
     width: 45%;
     box-shadow: -10px 10px 0px 0.5px $black,
     -9px 9px 0px 2px $gray;
-
     border-radius: 22px;
  
   }
@@ -438,15 +488,35 @@ footer{
     background-color: $maindark;
     width: 80%;
     border-radius: 24px;
+    span{
+      font-size: 100px;
+      opacity: 0.7;
+      margin: 0 auto;
+      @include mobile{
+        text-align: center;
+        width: 100%;
+      }
+    }
+    h1{
+      @include mobile{
+        font-size: 28px;
+        text-align: center;
+      }
+      }
+    p{
+      @include mobile{
+        text-align: center;
+      }
+    }
+
+    }
+
+    .btn{
+      border-radius: 10px;
+    }
+  
+   
 
   }
   
-  span{
-    opacity: 0.5;
-    font-size: 120px;
-  }
-  .btn{
-    border-radius: 10px;
-  }
 
-}

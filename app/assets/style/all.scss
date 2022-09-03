@@ -2,9 +2,9 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Lato&family=Noto+Sans+TC:wght@500&family=Roboto:ital,wght@1,900&display=swap');
-@import "mixin";
+@import './mixin.scss';
 @import './layout/index.scss';
-@import './layout/class.scss'
+@import './layout/class.scss';
 
 
 
