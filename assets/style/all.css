@@ -12054,17 +12054,17 @@ footer {
   opacity: 1;
 }
 
-.introbanner .icon {
-  color: #fff;
-}
-
-.introbanner .icon:hover {
+.introbanner .card:hover .icon {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
   background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
   background-image: linear-gradient(180deg, #62DB54, #09ACF5);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+}
+
+.introbanner .icon {
+  color: #fff;
 }
 
 .introbanner .borderbottom {
@@ -12074,7 +12074,8 @@ footer {
 
 @media (max-width: 768px) {
   .introbanner .borderbottom {
-    display: none;
+    width: 25%;
+    margin: 0 auto;
   }
 }
 
@@ -12093,6 +12094,13 @@ footer {
 
 .classprocess .card {
   border-radius: 12px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .classprocess .card {
+    text-align: center;
+  }
 }
 
 .classprocess h3, .classprocess .h3 {
