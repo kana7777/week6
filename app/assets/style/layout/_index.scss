@@ -116,21 +116,23 @@ footer{
     background-color: $maindark;
     border: $primary 1px solid;
     opacity: 1;
+    .icon{
+      background-image: linear-gradient(180deg, $primary, $secondary);
+      background-clip: text;
+      color: transparent;
+    }
   }
   .icon{
     color: $white;
   }
-  .icon:hover{
-    background-image: linear-gradient(180deg, $primary, $secondary);
-    background-clip: text;
-    color: transparent;
-  }
+  
  
   .borderbottom{
     border-bottom: $primary 3px solid;
     width: 25%;
     @include mobile{
-      display: none;
+      width:25%;
+      margin: 0 auto;
     }
   }
 
@@ -152,6 +154,10 @@ footer{
 
   .card{
     border-radius: 12px;
+    height: 100%;
+    @include mobile{
+      text-align: center;
+    }
   }
 
   h3{
@@ -177,35 +183,35 @@ footer{
       background-color: $secondarydark;
       border: $maindark 2px solid;
       min-height: 100%;
-   
     }
     .card:hover{
       border: $primary 2px solid;
 
-    }
-  h4,h5{
-    height: 3rem;
-  }
-    img{
-      width: 100px;
-      height: 100px;
-      border-radius: 50px;
-  
-    }
-   
-    .card-footer{
-      border-top: #c1c1c1 1px solid;
-    }
-    .price{
-      font-family: 'Azeret Mono', monospace;
-    }
- 
-    .showclassbtn{
-      background-image: linear-gradient(104deg, #62DB54, #09ACF5);
-      border-radius: 8px;
+      }
+      h4,h5{
+        height: 3rem;
+      }
+        img{
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+        }
+       
+        .card-footer{
+          border-top: #c1c1c1 1px solid;
+        }
+        .price{
+          font-family: 'Azeret Mono', monospace;
+        }
+     
+        .showclassbtn{
+          background-image: linear-gradient(104deg, #62DB54, #09ACF5);
+          border-radius: 8px;
+          
+        }
       
     }
-  }
+  
 
 .infomation{
 
@@ -380,11 +386,8 @@ footer{
 .articalshare{
   background-color: $maindark;
   .cards{
-   
-
     background-color: $maindark;
     a{
-     
       display: block;
       text-align: right;
       text-decoration: none;
@@ -433,7 +436,7 @@ footer{
 
 
 //學生分享
-
+ 
 .bg_share{
   background: url('../images/bg_share.jpg');
   background-size: cover;
